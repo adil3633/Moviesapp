@@ -13,12 +13,19 @@ export class MoviesListService {
 
 
     movies = [
-        { name: 'Terminator', description: 'Released on October 23,2019' },
-        { name: 'ZomieLand', description: 'Released on October 9,2019' },
-        { name: 'Rambo', description: 'Released on October 18,2019' },
-        { name: 'Abominable', description: 'Released on October 7,2019' },
+         { name: 'Alita Battle Angel',  Released: 'Released on Febrauary 14,2019' },
+        {name: 'Blue State Mountain', Released: 'Released on August 15, 2019'},
+        { name: 'The Perfection',  Released: 'Released on May 24,2019' },
+        {name: 'The Secret Life Of Pets 2', Released: 'Released on June 07, 2019'},
+        { name: 'The Lion King',  Released: 'Released on July 19,2019' },
+        { name: 'Toy Story 4',  Released: 'Released on June 21,2019' },
+        { name: 'Lucky Day',  Released: 'Released on October 11,2019' },
+        { name: 'The Influence',  Released: 'Released on October 11,2019' },
+        { name: 'Fast And Furious Presents HOBBS & SHAW',  Released: 'Released on August 2,2019' },
+        { name: 'Far from Home',  Released: 'Released on July 2,2019' },
+        { name: 'Avengers Endgame',  Released: 'Released on April 26,2019' }
     ];
-    addMovie(i: { name: string; description: string; }) {
+    addMovie(i: { name: string; released: string; }) {
         this.movies.push(i);
     }
     searchMovie(index: any) {
